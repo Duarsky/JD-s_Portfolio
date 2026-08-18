@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>JD's Portfolio</title>
+<link rel="icon" type="image/png" href="favicon.png"/>
+
+<!-- ── SEO ── -->
+<meta name="description" content="Jan Darsey H. Caceres — Fresh BSIT Graduate, Web Developer & IT Support specializing in networking, cybersecurity, and full-stack development based in San Pablo City, Laguna, Philippines."/>
+
+<!-- ── OPEN GRAPH (Facebook, LinkedIn, Messenger preview) ── -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="JD's Portfolio — Jan Darsey H. Caceres"/>
+<meta property="og:description" content="Fresh BSIT Graduate, Web Developer. View my projects, skills, and experience."/>
+<meta property="og:image" content="https://yourdomain.com/preview.png"/>
+<meta property="og:url" content="https://yourdomain.com/"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init("xWRM5WS5CYakQtoqk");</script>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="mainNav">
+  <a class="nav-logo" href="#hero">JDC<span> Junior Dev</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#portfolio">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="#contact">Hire Me</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── MOBILE MENU ── -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+  <button class="mobile-close" onclick="toggleMenu()" aria-label="Close menu">✕</button>
+  <a href="#about"          onclick="toggleMenu()">About</a>
+  <a href="#skills"         onclick="toggleMenu()">Skills</a>
+  <a href="#experience"     onclick="toggleMenu()">Experience</a>
+  <a href="#certifications" onclick="toggleMenu()">Certifications</a>
+  <a href="#portfolio"      onclick="toggleMenu()">Projects</a>
+  <a href="#contact"        onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Fresh Graduate — BSIT 2026</div>
+    <h1 class="hero-name">
+      Jan Darsey
+      <span class="line2">H. Caceres</span>
+    </h1>
+    <p class="hero-role">// Web Developer &amp; IT Support</p>
+    <p class="hero-desc">
+      Building reliable systems and solving real-world tech problems — from network infrastructure to full-stack web applications. Based in San Pablo City, Laguna, PH.
+    </p>
+    <div class="hero-btns">
+      <a class="btn-primary" href="#portfolio">View My Work</a>
+      <a class="btn-ghost"   href="#contact">Get in Touch</a>
+      <a class="btn-resume" href="resume.pdf" download>Download CV ↓</a>
+  </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">2+</div><div class="stat-label">Systems Built</div></div>
+    <div class="stat"><div class="stat-num">8+</div><div class="stat-label">Tech Skills</div></div>
+    <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Certifications</div></div>
+  </div>
+  <div class="scroll-indicator"><div class="scroll-line"></div>Scroll to explore</div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img-wrap reveal">
+      <img class="about-img"
+        src="graduation.jpg"
+        alt="Graduation photo" loading="lazy"/>
+      <div class="about-img-frame"></div>
+      <div class="about-img-badge">BSIT — Network Technology</div>
+    </div>
+    <div class="reveal" style="transition-delay:.15s">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">Turning ideas into <em>Digital</em> Experience</h2>
+      <div class="about-text">
+        <p>I'm a <strong>fresh BSIT graduate</strong> (2026) major in Network Technology from Pamantasan ng Lungsod ng San Pablo, with hands-on experience developing real-world systems for government agencies.</p>
+        <p>During my internship, I designed and delivered two production-level monitoring systems for the <strong>Department of Education San Pablo Division</strong>, earning Certificates of Appreciation for both contributions.</p>
+        <p>I'm passionate about <strong>cybersecurity knowledge, networking, and full-stack development</strong> — and eager to bring that passion to a team where I can grow and create lasting impact.</p>
+      </div>
+      <div class="about-tags">
+        <span class="tag">PHP / MySQL</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Python</span>
+        <span class="tag">Networking</span>
+        <span class="tag">Cybersecurity</span>
+        <span class="tag">Active Directory</span>
+        <span class="tag">PowerShell</span>
+        <span class="tag">VirtualBox</span>
+        <span class="tag">ZeroTier</span>
+        <span class="tag">CMD</span>
+        <span class="tag">WireGuard</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <div class="section-label reveal">Technical Expertise</div>
+  <h2 class="section-title reveal">My <em>skill</em> set</h2>
+  <div class="skills-grid">
+    <div class="skill-card reveal" style="transition-delay:.00s">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">Networking</div>
+      <div class="skill-items">IP addressing, DHCP, DNS, subnetting, ping, tracert, network configuration</div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.05s">
+      <div class="skill-icon">🔧</div>
+      <div class="skill-name">Hardware Troubleshooting</div>
+      <div class="skill-items">System unit replacement, diagnostics, system assembly, component testing</div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.10s">
+      <div class="skill-icon">🛡️</div>
+      <div class="skill-name">Cybersecurity Awareness</div>
+      <div class="skill-items">Phishing identification, password policies, least privilege basics, security best practices</div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.15s">
+      <div class="skill-icon">💻</div>
+      <div class="skill-name">Programming</div>
+      <div class="skill-items">HTML, CSS, C++, Python, JavaScript, Bootstrap, PHP, MySQL — front to back</div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.20s">
+      <div class="skill-icon">⚙️</div>
+      <div class="skill-name">Software Troubleshooting</div>
+      <div class="skill-items">App repair, reinstallations, malware removal, system optimization, diagnostics</div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.25s">
+      <div class="skill-icon">🖥️</div>
+      <div class="skill-name">Active Directory</div>
+      <div class="skill-items">Creating users, resetting passwords, group policy fundamentals</div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.30s">
+      <div class="skill-icon">⌨️</div>
+      <div class="skill-name">Command Line Tools</div>
+      <div class="skill-items">CMD and PowerShell essentials for automation and administration</div>
+    </div>
+    <div class="skill-card reveal" style="transition-delay:.35s">
+      <div class="skill-icon">🔗</div>
+      <div class="skill-name">Virtualization &amp; VPN Tools</div>
+      <div class="skill-items">VirtualBox, WireGuard, ZeroTier for lab environments and secure tunneling</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+  <div class="section-label reveal">Work History</div>
+  <h2 class="section-title reveal">Professional <em>experience</em></h2>
+  <div class="exp-timeline">
+    <div class="exp-item reveal" style="transition-delay:.15s">
+      <div class="exp-date">2023 — Present</div>
+      <div class="exp-role">Piso WiFi Vendo Machine Operator / Installer</div>
+      <div class="exp-company">Freelance — San Pablo City, Laguna</div>
+      <ul class="exp-bullets">
+        <li>Installed and managed Piso WiFi machines across multiple locations in San Pablo City.</li>
+        <li>Handled full setup configurations, maintenance schedules, and ensured consistent uptime for customers.</li>
+        <li>Diagnosed and resolved hardware and connectivity issues independently.</li>
+      </ul>
+    </div>
+    <div class="exp-item reveal">
+      <div class="exp-date">2025 — 2026</div>
+      <div class="exp-role">OJT / Information Technology Intern</div>
+      <div class="exp-company">Department of Education — San Pablo Division</div>
+      <ul class="exp-bullets">
+        <li>Developed and maintained the Regional and Personnel Document Monitoring System, improving document tracking and monitoring workflows.</li>
+        <li>Designed and built the Maintenance Operation Monitoring System for tracking maintenance requests and operational activities.</li>
+        <li>Assisted in database management, system testing, troubleshooting, and user support.</li>
+        <li>Improved workflow efficiency through automation and digital record management.</li>
+        <li>Collaborated with supervisors and staff to gather system requirements and implement functional solutions.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── CERTIFICATIONS ── -->
+<section id="certifications">
+  <div class="section-label reveal">Credentials</div>
+  <h2 class="section-title reveal">Certifications &amp; <em>Achievements</em></h2>
+  <div class="cert-grid">
+    <div class="cert-card reveal" style="transition-delay:.00s">
+      <div class="cert-icon">🏆</div>
+      <div>
+        <div class="cert-name">Certificate of Appreciation</div>
+        <div class="cert-issuer">Regional &amp; Personnel Document Monitoring System — DepEd San Pablo Division</div>
+        <span class="cert-badge">2026</span>
+      </div>
+    </div>
+    <div class="cert-card reveal" style="transition-delay:.05s">
+      <div class="cert-icon">🏆</div>
+      <div>
+        <div class="cert-name">Certificate of Appreciation</div>
+        <div class="cert-issuer">Maintenance Operation Monitoring System — DepEd San Pablo Division</div>
+        <span class="cert-badge">2026</span>
+      </div>
+    </div>
+    <div class="cert-card reveal" style="transition-delay:.10s">
+      <div class="cert-icon">🔴</div>
+      <div>
+        <div class="cert-name">Certified Red Team Operations Management</div>
+        <div class="cert-issuer">CRTOM — Cybersecurity Certification</div>
+        <span class="cert-badge">Certified</span>
+      </div>
+    </div>
+    <div class="cert-card reveal" style="transition-delay:.15s">
+      <div class="cert-icon">🎓</div>
+      <div>
+        <div class="cert-name">Certified Cybersecurity Educator Professional</div>
+        <div class="cert-issuer">CCEP — Cybersecurity Education</div>
+        <span class="cert-badge">Certified</span>
+      </div>
+    </div>
+    <div class="cert-card reveal" style="transition-delay:.20s">
+      <div class="cert-icon">💡</div>
+      <div>
+        <div class="cert-name">What is Software Development?</div>
+        <div class="cert-issuer">Simplilearn Online Learning Platform</div>
+        <span class="cert-badge">Completed</span>
+      </div>
+    </div>
+    <div class="cert-card reveal" style="transition-delay:.25s">
+      <div class="cert-icon">📋</div>
+      <div>
+        <div class="cert-name">TESDA CSS NC II</div>
+        <div class="cert-issuer">Technical Education and Skills Development Authority</div>
+        <span class="cert-badge planned">Planned</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PORTFOLIO ── -->
+<section id="portfolio">
+  <div class="section-label reveal">Projects</div>
+  <h2 class="section-title reveal">Featured <em>work</em></h2>
+  <div class="projects-grid">
+    <div class="project-card reveal" style="transition-delay:.00s">
+      <div class="project-img-wrap">
+        <img class="project-img"
+        src="rpdms.png"
+        alt="Document Monitoring System" loading="lazy"
+        onclick="openImageView('rpdms.png')"/>
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div class="project-tag">// System Development · 2026</div>
+        <div class="project-title">Regional &amp; Personnel Document Monitoring System</div>
+        <div class="project-desc">A comprehensive web-based system to track, manage, and monitor documents and personnel records for the DepEd San Pablo Division, improving efficiency and accountability.</div>
+        <div class="project-stack">
+          <span class="stack-pill">PHP</span>
+          <span class="stack-pill">MySQL</span>
+          <span class="stack-pill">JavaScript</span>
+          <span class="stack-pill">Bootstrap</span>
+        </div>
+        <a class="project-link" href="https://rpdms.depedsanpablo.com/" target="_blank" rel="noopener noreferrer">View Live Project →</a>
+      </div>
+    </div>
+    <div class="project-card reveal" style="transition-delay:.10s">
+      <div class="project-img-wrap">
+        <img class="project-img"
+          src="mms.png"
+          alt="Maintenance Monitoring System" loading="lazy"
+          onclick="openImageView('mms.png')"/>
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div class="project-tag">// System Development · 2026</div>
+        <div class="project-title">Maintenance Operation Monitoring System</div>
+        <div class="project-desc">A digital platform for logging, tracking, and managing maintenance requests and operational activities for the DepEd San Pablo Division, streamlining facility workflows.</div>
+        <div class="project-stack">
+          <span class="stack-pill">PHP</span>
+          <span class="stack-pill">MySQL</span>
+          <span class="stack-pill">HTML/CSS</span>
+          <span class="stack-pill">JavaScript</span>
+        </div>
+        <a class="project-link" href="https://mms.depedsanpablo.com/" target="_blank" rel="noopener noreferrer">View Live Project →</a>
+      </div>
+    </div>
+    <div class="project-card reveal" style="transition-delay:.30s">
+  <div class="project-img-wrap">
+    <img class="project-img"
+      src="facial.png"
+      alt="Facial Recognition Attendance System" loading="lazy"
+      onclick="openImageView('facial.png')"/>
+    <div class="project-overlay"></div>
+  </div>
+  <div class="project-body">
+    <div class="project-tag">// System Development · 2026</div>
+    <div class="project-title">Facial Recognition Attendance System</div>
+    <div class="project-desc">A facial-recognition-based attendance web app secured within a VPN, handling real-time recognition-based check-in and logging to ensure accurate, tamper-resistant attendance tracking.</div>
+    <div class="project-stack">
+      <div class="project-stack">
+      <span class="stack-pill">face-api.js</span>
+      <span class="stack-pill">JavaScript</span>
+      <span class="stack-pill">Java</span>
+      <span class="stack-pill">Python</span>
+      <span class="stack-pill">Supabase</span>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="project-card reveal" style="transition-delay:.40s">
+  <div class="project-img-wrap">
+    <img class="project-img"
+      src="voting.png"
+      alt="Electronic Voting System" loading="lazy"
+      onclick="openImageView('voting.png')"/>
+    <div class="project-overlay"></div>
+  </div>
+  <div class="project-body">
+    <div class="project-tag">// System Development · 2026</div>
+    <div class="project-title">Electronic Voting System</div>
+    <div class="project-desc">A VPN-secured electronic voting platform built alongside the attendance system, owning the vote-logging logic to ensure a secure and tamper-resistant voting process.</div>
+    <div class="project-stack">
+      <span class="stack-pill">VPN</span>
+      <span class="stack-pill">Vote Logging</span>
+      <span class="stack-pill">JavaScript</span>
+      <span class="stack-pill">PHP/MySQL</span>
+    </div>
+  </div>
+</div>
+    <div class="project-card reveal" style="transition-delay:.20s">
+      <div class="project-img-wrap">
+        <img class="project-img"
+          src="pisofi.png"
+          alt="Piso WiFi Network Management" loading="lazy"
+          onclick="openImageView('pisofi.png')"/>
+        <div class="project-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div class="project-tag">// Network Deployment · 2023–Present</div>
+        <div class="project-title">Piso WiFi Vendo Machine Network Deployment</div>
+        <div class="project-desc">End-to-end installation, configuration, and maintenance of coin-operated WiFi vending machines across San Pablo City, serving community internet access needs.</div>
+        <div class="project-stack">
+          <span class="stack-pill">Networking</span>
+          <span class="stack-pill">Hardware</span>
+          <span class="stack-pill">Configuration</span>
+          <span class="stack-pill">Maintenance</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-left reveal">
+      <div class="section-label">Get in Touch</div>
+      <h2 class="section-title">Let's work <em>together</em></h2>
+      <p>I'm actively seeking entry-level IT roles, developer positions, and project collaborations. Whether you're a recruiter, employer, or agency — I'd love to connect and explore opportunities.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:jandarseycaceres@gmail.com">
+          <div class="contact-link-icon">✉</div>
+          jandarseycaceres@gmail.com
+        </a>
+        <a class="contact-link" href="tel:+639817229665">
+          <div class="contact-link-icon">📞</div>
+          +63 981 722 9665
+        </a>
+        <span class="contact-link" style="cursor:default;">
+          <div class="contact-link-icon">📍</div>
+          San Pablo City, Laguna, Philippines
+        </span>
+        <a class="contact-link" href="https://www.linkedin.com/in/jan-darsey-h-caceres-611ba43a3" target="_blank" rel="noopener noreferrer">
+          <div class="contact-link-icon">in</div>
+          LinkedIn Profile
+        </a>
+        <a class="contact-link" href="https://github.com/Duarsky" target="_blank" rel="noopener noreferrer">
+          <div class="contact-link-icon">gh</div>
+          GitHub Profile
+        </a>
+        <a class="contact-link" href="resume.pdf" download>
+          <div class="contact-link-icon">↓</div>
+          Download My Resume (PDF)
+        </a>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:.15s">
+      <div class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label class="form-label" for="fname">Your Name</label>
+          <input class="form-input" id="fname" type="text" placeholder="e.g. Maria Santos" autocomplete="name"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="femail">Email Address</label>
+          <input class="form-input" id="femail" type="email" placeholder="you@company.com" autocomplete="email"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fsubject">Subject</label>
+          <input class="form-input" id="fsubject" type="text" placeholder="Job Opportunity / Collaboration"/>
+        </div>
+                <div class="form-group">
+          <label class="form-label" for="fmessage">Message</label>
+          <textarea class="form-textarea" id="fmessage" placeholder="Tell me about the opportunity or project…"></textarea>
+        </div>
+        <input type="text" id="fwebsite" name="website" class="honeypot-field" tabindex="-1" autocomplete="off"/>
+        <div class="form-msg" id="formMsg"></div>
+        <button class="form-submit" id="formBtn" onclick="handleSubmit(event)">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <a class="footer-brand-name" href="#hero">JDC<span> Junior Dev</span></a>
+      <p class="footer-brand-desc">Fresh BSIT Graduate & Web Developer based in San Pablo City, Laguna. Building reliable tech solutions and ready to contribute to your team.</p>
+      <div class="footer-socials">
+        <a class="social-btn" href="https://www.linkedin.com/in/jan-darsey-h-caceres-611ba43a3" target="_blank" rel="noopener noreferrer" title="LinkedIn">in</a>
+        <a class="social-btn" href="https://github.com/Duarsky" target="_blank" rel="noopener noreferrer" title="GitHub">gh</a>
+        <a class="social-btn" href="mailto:jandarseycaceres@gmail.com" title="Email">✉</a>
+        <a class="social-btn" href="tel:+639817229665" title="Call">☎</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Education</div>
+      <ul class="footer-links">
+        <li><span>Pamantasan ng Lungsod ng San Pablo — BSIT</span></li>
+        <li><span>Major: Network Technology</span></li>
+        <li><span>Graduated 2026</span></li>
+        <li><span>STI San Pablo — ICT</span></li>
+        <li><span>2020 – 2022</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact Info</div>
+      <div class="footer-contact-item">📍 San Pablo City, Laguna, Philippines</div>
+      <div class="footer-contact-item">📞 <a href="tel:+639817229665">+63 981 722 9665</a></div>
+      <div class="footer-contact-item">✉ <a href="mailto:jandarseycaceres@gmail.com">jandarseycaceres@gmail.com</a></div>
+      <div class="footer-contact-item">🕐 Mon–Sat, 8AM–6PM PST</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Jan Darsey H. Caceres. All rights reserved.</span>
+    <span>Designed &amp; Built by <a href="#hero">JDC Junior Dev</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<!-- ── IMAGE VIEWER ── -->
+<div class="image-viewer" id="imageViewer" onclick="closeImageView()">
+  <img class="image-viewer-img" id="imageViewerImg" src="" alt=""/>
+</div>
+</body>
+</html>
